@@ -1,0 +1,13 @@
+# data
+ch7_generative_models/data/*
+!ch7_generative_models/data/.gitkeep
+ch8_foundation_models/data/*
+!ch8_foundation_models/data/.gitkeep
+
+# cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# secrets
+.env

@@ -1,0 +1,7 @@
+transformers[sentencepiece]
+bitsandbytes
+accelerate
+jupyter
+safetensors
+einops
+Pillow
