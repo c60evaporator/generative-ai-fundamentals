@@ -1,4 +1,12 @@
+# Transformers
 transformers[sentencepiece]
+datasets
+evaluate
 bitsandbytes
 accelerate
+scikit-learn
+# LangChaing/LangGraph
+langchain
+langchain-google-genai
+
 jupyter

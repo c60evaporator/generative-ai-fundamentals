@@ -3,6 +3,8 @@ ch7_generative_models/data/*
 !ch7_generative_models/data/.gitkeep
 ch8_foundation_models/data/*
 !ch8_foundation_models/data/.gitkeep
+ch8_foundation_models/models/*
+!ch8_foundation_models/models/.gitkeep
 
 # cache
 __pycache__/

@@ -45,11 +45,13 @@ services:
       # Base path for datasets inside the container
       DATASET_ROOT: "/workspace/data"
       # Base path for Hugging Face cache (models, tokenizers, etc.)
-      HF_HOME: "/root/.cache/huggingface"
-    
+      # NOTE: must be under the non-root USERNAME's home, not /root, since the
+      # container process runs as ${USERNAME:-developer} and /root is not traversable by it.
+      HF_HOME: "/home/${USERNAME:-developer}/.cache/huggingface"
+
     # Volume mounts
     volumes:
       # Project (str, settings etc. managed by Git)
       - .:/workspace
       # Hugging Face cache (models, tokenizers, etc. downloaded by the container will be stored on the host to avoid re-downloading)
-      - ~/.cache/huggingface:/root/.cache/huggingface
+      - ~/.cache/huggingface:/home/${USERNAME:-developer}/.cache/huggingface
