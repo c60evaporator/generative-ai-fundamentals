@@ -48,6 +48,7 @@ services:
       # NOTE: must be under the non-root USERNAME's home, not /root, since the
       # container process runs as ${USERNAME:-developer} and /root is not traversable by it.
       HF_HOME: "/home/${USERNAME:-developer}/.cache/huggingface"
+      GOOGLE_API_KEY: "${GOOGLE_API_KEY:-GOOGLE_API_KEY}"
 
     # Volume mounts
     volumes:

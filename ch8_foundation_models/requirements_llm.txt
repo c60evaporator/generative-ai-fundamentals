@@ -7,6 +7,8 @@ accelerate
 scikit-learn
 # LangChaing/LangGraph
 langchain
+langchain-huggingface
 langchain-google-genai
+langgraph
 
 jupyter
