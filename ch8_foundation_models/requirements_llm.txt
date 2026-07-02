@@ -9,6 +9,8 @@ scikit-learn
 langchain
 langchain-huggingface
 langchain-google-genai
+langchain-quickjs
 langgraph
+deepagents
 
 jupyter

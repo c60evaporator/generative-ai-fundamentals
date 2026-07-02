@@ -14,7 +14,8 @@ FROM nvidia/cuda:${CUDA_VERSION}-cudnn-devel-ubuntu${UBUNTU_VERSION}
 # Install Python, PyTorch, and other dependencies
 ############################
 # Python version
-ARG PYTHON_VERSION=3.10
+# NOTE: deepagents requires Python >=3.11
+ARG PYTHON_VERSION=3.11
 # PyTorch versions
 ARG TORCH_CUDA=cu128
 ARG TORCH_VERSION=2.10.0
